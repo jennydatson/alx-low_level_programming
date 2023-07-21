@@ -1,14 +1,14 @@
-#define "main.h"
+#include "main.h"
 
 /**
- * _isdigit - checks for upprcase character
- * @c: function parameter
+ * _isdigit - checks for 0 through 9
+ * @c: parameter to be checked
  * Return: 1 on success 0 on failure
  */
 
 int _isdigit(int c)
 {
-	if (c >= 'A' && c <= 'Z')
+	if (c >= 48 && c <= 57)
 		return (1);
 	else
 		return (0);
